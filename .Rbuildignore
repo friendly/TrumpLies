@@ -1,2 +1,5 @@
+source-data/
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^README.md$
+
