@@ -4,7 +4,7 @@ library(magrittr)
 library(lubridate)
 library(forcats)
 
-# NB: had to manually remove the blank lines ",,,,,,,," at the end of the file
+# NB: had to manually remove the blank lines ",,,,,,,," at the end of the file created by Excel. Ugh
 
 TrumpLies <- read_csv("source-data/Trumpcheck-YorkU-Dec5.csv",
 col_types = cols(date = col_date(format = "%m-%d-%Y")))
@@ -36,9 +36,3 @@ ggplot(TrumpLies, aes(x=date))  +
   theme_bw() + theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))
 
 
-ggplot(dates, aes(x=Date)) + geom_histogram(binwidth=30, colour="white") +
-  scale_x_date(labels = date_format("%Y-%b"),
-               breaks = seq(min(dates$Date)-5, max(dates$Date)+5, 30),
-               limits = c(as.Date("2008-05-01"), as.Date("2012-04-01"))) +
-  ylab("Frequency") + xlab("Year and Month") +
-  theme_bw() + opts(axis.text.x = theme_text(angle=90))
