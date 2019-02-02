@@ -1,15 +1,17 @@
 Package: TrumpLies
 Type: Package
 Title: Trump Lies Database
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(person(given = "Michael", family = "Friendly", role=c("aut", "cre"), email="friendly@yorku.ca",
              comment=c(ORCID="0000-0002-3237-0941")),
-            person(given = "Matthew", family = "Dubins", role="aut"),
-            person(given = "Jelle", family = "Geertsma", role="ctb"))
+            person(given = "Matthew", family = "Dubins", role="aut", email="matt.dubins@donorscience.ca"),
+            person(given = "Jelle", family = "Geertsma", role="ctb", email="rdatasculptor@gmail.com"))
 Maintainer: Michael Friendly <friendly@yorku.ca>
 Description: Makes available in R the database of Donald Trump's false claims
     compiled by Daniel Dale at The Toronto Star for further analysis
     and data visualization.
+Suggests:
+  ggplot2, scales, gganimate
 License: GPL (>= 2)
 URL: https://github.com/friendly/TrumpLies
 BugReports: https://github.com/friendly/TrumpLies/issues
