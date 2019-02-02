@@ -4,16 +4,16 @@
 \name{TrumpLies}
 \alias{TrumpLies}
 \title{Trump Lies Database}
-\format{A `tbl_df`, `tbl` and `data.frame` with 4017 rows and 15 variables:
+\format{A `tbl_df`, `tbl` and `data.frame` with 3924 rows and 15 variables:
 \describe{
   \item{\code{number}}{integer; Sequential lie number}
   \item{\code{date}}{Date; date of the lie}
   \item{\code{place}}{character; Place the false claim was delivered or reported}
   \item{\code{claim}}{character; Text of the false claim}
   \item{\code{infact}}{character; Text of the actual fact}
-  \item{\code{slug}}{character; Brief description of the false claim}
-  \item{\code{repeat}}{Factor w/ 2 levels: "no","Yes"; Was this false claim repeated?}
-  \item{\code{source}}{character Web URL pointing to a story}
+  \item{\code{slug}}{character; Brief description of the false claim, used as a shorthand abbreviation for \code{claim}}
+  \item{\code{repeat}}{Factor w/ 2 levels: "no","yes"; Was this false claim repeated?}
+  \item{\code{source}}{character Web URL pointing to a publication giving the claim}
   \item{\code{category1}}{Factor w/ 95 levels; Content category of the false claim}
   \item{\code{category2}}{Factor w/ 101 levels; Content category of the false claim}
   \item{\code{category3}}{Factor w/ 87 levels; Content category of the false claim}
@@ -39,7 +39,18 @@ DETAILS: A description of the details of codings for `slug`, `category*` and oth
 \examples{
 data(TrumpLies)
 names(TrumpLies)
-# do something mildly interesting here
+# do something mildly interesting here: plot a histogram of lies by month
+library(ggplot2)
+library(scales)
+ggplot(TrumpLies, aes(x=date))  +
+  geom_histogram(binwidth=30, colour="black", fill="lightblue") +
+  geom_density(aes(y=30* ..count..), alpha=.2, fill="#FF6666") +
+  scale_x_date(labels = scales::date_format("\%Y-\%m"),
+               breaks = seq(min(TrumpLies$date)-5, max(TrumpLies$date)+5, 30)) +
+  ylab("Number of False Claims") +
+  xlab("Year and Month") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))
 
 }
 \author{
