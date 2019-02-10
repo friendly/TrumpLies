@@ -2,5 +2,6 @@ source-data/
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README.md$
+^README.Rmd$
 ^NEWS.md$
 
