@@ -4,4 +4,4 @@ source-data/
 ^README.md$
 ^README.Rmd$
 ^NEWS.md$
-
+^README-*$

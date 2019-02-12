@@ -2,6 +2,18 @@
 output: github_document
 ---
 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+<!-- badges: end -->
+
 # TrumpLies
 
 The goal of TrumpLies is to makes available in R the database of Donald Trump's false claims
@@ -13,7 +25,8 @@ The goal of TrumpLies is to makes available in R the database of Donald Trump's 
 This package is presently maintained in a private repo on Github, pending public release of the 
 database. If you can read this, you can install the package via
 
-``` r
+```{r install-github, eval=FALSE}
+# install.packages("devtools")
 devtools::install_github("friendly/TrumpLies")
 ```
 
@@ -21,7 +34,7 @@ devtools::install_github("friendly/TrumpLies")
 
 This is a basic example showing a simple histogram of frequencies of Trump lies by month using `ggplot2`:
 
-``` r
+```{r ex1}
 ## basic example code
 library(TrumpLies)
 library(ggplot2)

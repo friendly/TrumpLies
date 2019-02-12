@@ -1,4 +1,8 @@
 
+<!-- badges: start -->
+
+<!-- badges: end -->
+
 # TrumpLies
 
 The goal of TrumpLies is to makes available in R the database of Donald
@@ -12,6 +16,7 @@ pending public release of the database. If you can read this, you can
 install the package via
 
 ``` r
+# install.packages("devtools")
 devtools::install_github("friendly/TrumpLies")
 ```
 
@@ -36,3 +41,5 @@ ggplot(TrumpLies, aes(x=date))  +
   theme_bw() + 
   theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))
 ```
+
+<img src="README-ex1-1.png" width="100%" />
