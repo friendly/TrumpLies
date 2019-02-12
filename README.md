@@ -1,23 +1,25 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 # TrumpLies
 
-The goal of TrumpLies is to makes available in R the database of Donald
-Trump’s false claims compiled by Daniel Dale at *The Toronto Star* for
-further analysis and data visualization.
+The goal of the `TrumpLies` package is to makes available in R the
+database of Donald Trump’s false claims compiled by Daniel Dale at *The
+Toronto Star* for further analysis and data visualization.
 
 ## Installation
 
 This package is presently maintained in a private repo on Github,
 pending public release of the database. If you can read this, you can
-install the package via
+install the package via:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("friendly/TrumpLies")
+# install.packages(c("devtools", "remotes"))
+remotes::install_github("friendly/TrumpLies")
 ```
 
 ## Example
@@ -42,4 +44,4 @@ ggplot(TrumpLies, aes(x=date))  +
   theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))
 ```
 
-<img src="README-ex1-1.png" width="100%" />
+<img src="README-ex1-1.png" width="80%" />
