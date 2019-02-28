@@ -39,6 +39,7 @@ it cannot be used for commercial purposes.
 
 See `citation("TrumpLies")` for an appropriate citation for the package.  In addition, graphs or tables published from
 this should cite the source of the data as *Data source: Daniel Dale, The Toronto Star*.
+
 ## Example
 
 This is a basic example showing a simple histogram of frequencies of Trump lies by month using `ggplot2`:
