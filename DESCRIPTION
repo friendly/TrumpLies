@@ -1,7 +1,8 @@
 Package: TrumpLies
 Type: Package
-Title: Trump Lies Database
+Title: Trump Lies Database From The Toronto Star
 Version: 0.2.0
+Date: 2019-02-28
 Authors@R: c(person(given = "Michael", family = "Friendly", role=c("aut", "cre"), email="friendly@yorku.ca",
              comment=c(ORCID="0000-0002-3237-0941")),
             person(given = "Matthew", family = "Dubins", role="aut", email="matt.dubins@donorscience.ca"),
