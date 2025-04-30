@@ -4,7 +4,8 @@
 \name{TrumpLies}
 \alias{TrumpLies}
 \title{Trump Lies Database}
-\format{A `tbl_df`, `tbl` and `data.frame` with 3924 rows and 15 variables:
+\format{
+A `tbl_df`, `tbl` and `data.frame` with 3924 rows and 15 variables:
 \describe{
   \item{\code{number}}{integer; Sequential lie number}
   \item{\code{date}}{Date; date of the lie}
@@ -21,7 +22,8 @@
   \item{\code{placecategory}}{character Category of the `place`}
   \item{\code{month}}{numeric; Month of the lie, from `date` for convenience}
   \item{\code{year}}{numeric; Year of the lie, from `date` for convenience}
-}}
+}
+}
 \source{
 Daniel Dale and Edward Tubb, \emph{The Toronto Star}, \url{link to Github site}
 }
@@ -30,7 +32,8 @@ TrumpLies
 }
 \description{
 This is the complete database of false claims ("lies") by Donald Trump compiled by Daniel Dale of
-       \emph{The Toronto Star} from 2017-01-20 to 2018-12-05. MORE DESCRIPTION HERE if needed.
+       \emph{The Toronto Star} from 2017-01-20 to 2018-12-05. Each claim was checked against other sources before
+       being considered false. These claims are categorized by their content.
 }
 \details{
 DETAILS: A description of the details of codings for `slug`, `category*` and other details needed here.

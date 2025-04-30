@@ -1,6 +1,7 @@
 #' @title Trump Lies Database
 #' @description This is the complete database of false claims ("lies") by Donald Trump compiled by Daniel Dale of
-#'        \emph{The Toronto Star} from 2017-01-20 to 2018-12-05. MORE DESCRIPTION HERE if needed.
+#'        \emph{The Toronto Star} from 2017-01-20 to 2018-12-05. Each claim was checked against other sources before
+#'        being considered false. These claims are categorized by their content.
 #'
 #' @format A `tbl_df`, `tbl` and `data.frame` with 3924 rows and 15 variables:
 #' \describe{
