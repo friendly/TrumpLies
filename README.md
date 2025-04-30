@@ -3,19 +3,22 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Last
+Commit](https://img.shields.io/github/last-commit/friendly/TrumpLies)](https://github.com/friendly/TrumpLies)
+
 <!-- badges: end -->
 
-# TrumpLies
+# TrumpLies <img src="man/figures/logo.jpg" align="right" height="160px" />
 
-The goal of the `TrumpLies` package is to makes available in R the
-database of Donald Trump’s false claims compiled by Daniel Dale at *The
-Toronto Star* for further analysis and data visualization.
+The `TrumpLies` package makes available in R the database of false
+claims by Donald Trump from 2017-2018 compiled by Daniel Dale at *The
+Toronto Star*. While largely of historical interest, there may still be
+some use for this in analysis and for data visualization.
 
 ## Installation
 
-This package is presently maintained in a private repo on Github,
-pending public release of the database. If you can read this, you can
-install the package via:
+This package is presently maintained in on Github, pending public
+release. You can install the package via:
 
 ``` r
 # install.packages(c("devtools", "remotes"))
@@ -27,7 +30,7 @@ remotes::install_github("friendly/TrumpLies")
 This package is released under the [Creative Commons CC
 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/2.0/ca/)
 license. This means that appropriate credit for use must be given and it
-cannot be used for commercial purposes.
+**cannot be used for commercial purposes**.
 
 See `citation("TrumpLies")` for an appropriate citation for the package.
 In addition, graphs or tables published from this should cite the source
@@ -42,6 +45,7 @@ Trump lies by month using `ggplot2`:
 ## basic example code
 library(TrumpLies)
 library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 4.4.3
 library(scales)
 data(TrumpLies)
 
@@ -55,4 +59,4 @@ ggplot(TrumpLies, aes(x=date))  +
   theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))
 ```
 
-<img src="README-ex1-1.png" width="80%" />
+<img src="man/figures/README-ex1-1.png" width="80%" />
