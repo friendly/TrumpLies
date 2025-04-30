@@ -60,3 +60,10 @@ ggplot(TrumpLies, aes(x=date))  +
 ```
 
 <img src="man/figures/README-ex1-1.png" width="80%" />
+
+Here is an neat animation by Jelle Geertsma tracking the topics of
+Trump’s false claims over time.
+
+<center>
+<img src="man/figures/trump_claims.gif" width=520>
+</center>

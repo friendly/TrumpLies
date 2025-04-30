@@ -63,3 +63,9 @@ ggplot(TrumpLies, aes(x=date))  +
   theme(axis.text.x = element_text(angle=45, vjust = 1, hjust=1))
 ```
 
+Here is an neat animation by Jelle Geertsma tracking the topics of Trump's false claims
+over time.
+
+<center>
+<img src="man/figures/trump_claims.gif" width=520>
+</center>
